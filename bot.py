@@ -1,7 +1,7 @@
 import telebot
 import os
 
-TOKEN = os.getenv("BOT_TOKEN")  # Lấy token từ biến môi trường
+TOKEN = os.getenv("7961535921:AAEJFrNuBSzC0Win1gMPIYicIxAVmCINB74")  # Lấy token từ biến môi trường
 
 bot = telebot.TeleBot(TOKEN)
 
