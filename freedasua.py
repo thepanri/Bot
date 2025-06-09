@@ -7,6 +7,10 @@ import requests
 import random
 import io 
 import zipfile
+import html
+import traceback
+import json
+import threading
 from telebot.types import User
 from gtts import gTTS
 from bs4 import BeautifulSoup
@@ -15,7 +19,13 @@ from translate import Translator
 from telebot.types import ReactionTypeEmoji
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
-bot_token =  "7896551296:AAGVbUQpMzProDaMFg11M15vOVJRpP5w7JA"  # '7178812917:AAEUayKCUnt-iU0SWRdhUNt--6AssXaBaB0' # '7078161982:AAFrl7q2A-qyFWnhTOH1qBx66on-p2omtIg'   
+
+bot_token = os.getenv("BOT_TOKEN")  # Lấy token từ biến môi trường
+bot = telebot.TeleBot(bot_token)
+#bot_token =  "7896551296:AAGVbUQpMzProDaMFg11M15vOVJRpP5w7JA" 
+
+ 
+   # '7178812917:AAEUayKCUnt-iU0SWRdhUNt--6AssXaBaB0' # '7078161982:AAFrl7q2A-qyFWnhTOH1qBx66on-p2omtIg'   
 openweathermap_api_key = 'a96625bdbdd9dca03d4f073780531e37'
 bot = telebot.TeleBot(bot_token)
 processes = []
