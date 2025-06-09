@@ -4,7 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
+    startCommand: "python trhiep.py"
     envVars:
       - key: BOT_TOKEN
-        value: 7961535921:AAEJFrNuBSzC0Win1gMPIYicIxAVmCINB74
+        value: 7896551296:AAGVbUQpMzProDaMFg11M15vOVJRpP5w7JA
