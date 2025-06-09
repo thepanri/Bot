@@ -1,1 +1,6 @@
 pyTelegramBotAPI
+requests
+gTTS
+beautifulsoup4
+translate
+
