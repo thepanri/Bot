@@ -6,7 +6,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
-    bot.reply_to(message, "✅ Bot ngu đang chạy trên Render!")
+    bot.reply_to(message, "✅ Bot ngu đang chạy!")
 
 print("🤖 Bot đang chạy...")
 bot.infinity_polling()
